@@ -1,12 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>EzzyDev</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Ezzy Devan Mortimer">
+
+	<link rel="stylesheet" href="css/ezzydevstyle.css">
+	<link rel="stylesheet" href="css/navbar.css">
+
+	<title>EzzyDev</title>
+	<link rel="icon" type="image/png" href="http://ezzydev.me/res/favicon-32x32.png?r=1" size="32x32" />
+	<link rel="shortcut icon" href="http://ezzydev.me/res/favicon.ico?r=1" />
+	 
 </head>
+
 <body>
-<a href="https://www.youtube.com/user/klutzyfingers">
-<img src="ezzdevheader.png" alt="welcome to EZZY DEV" width="1440" height="150" /img></a>
-<h1 style="color:rgb(1,121,255)">EzzyDev</h1>
-<p>Youtube Channel:</p>
+
+
+	<div class="parallax">
+		<div class="header">
+			<a href="https://www.youtube.com/user/klutzyfingers" target="_blank" title="Opens youtube in a new tab">
+			<img src="res/EzzyDevLogo.png" alt="welcome to EZZY DEV" width="150" height="150" style="padding: 22px;"/img></a>
+		</div>
+	
+		<div class="navbar" style="height:50px;">
+			<div id="navbar">
+				<ul id="white">
+					<li><a href="#about" onclick="point_out('abouthead')">About</a></li>
+					<li><a href="gallery/index.html">Gallery</a></li>
+					<li><a href="dashcam/index.html">Dashcam</a></li>
+					<li><a href="music/index.html">Music</a></li>
+					<li><a href="index.html">Home</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="column left">
+				<div class="checklist toggleable">
+				<h3 id="grey">External Links</h3>
+					<div>
+						<ul id="grey">
+							<li><a href="https://www.instagram.com/ezzymortimer">Instagram</a></li>
+							<li><a href="https://www.facebook.com/ezzy.mortimer">Facebook</a></li>
+							<li><a href="https://www.youtube.com/user/klutzyfingers">Youtube</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="column middle">
+				<div class="together">
+					<h1 id="heading-white">Welcome</h1>
+					<div class="textsheet">
+						<a>Welcome to EzzyDev, this website is created from scratch by me. I'm using this website as a 
+						means to learn web development and showcase my projects and interests. Everything is hosted on 
+						GitHub so far, and all photos and graphics will be taken or designed by me.</a>
+						<a id="white" onclick="toggle_hide()" href="#toggle">Toggle Sidebars</a>
+					</div>
+					<hr id="about">
+				</div>
+				
+				<div class="together">
+					<h1 class="about" id="abouthead">About Me</h1>
+					<div class="textsheet">
+					<img style="float: left; margin-right: 5%; margin-top: -3%;  border-radius: 100%; margin-left: 5%;" 
+					src="https://graph.facebook.com/100000239285007/picture?type=large" width="150" height="150">
+						<a style="vertical-align: middle">I am a Computer Science student at the University of 
+						Auckland. I am enjoying computer science so far, from 2016 to 2017, I have learnt Matlab,
+						C, and Python and I am currently teaching myself HTML, CSS, and Javascript; the reason for
+						making this website. My interests are music, graphic design, computers and gaming, and
+						hanging with friends.</a>
+					</div>
+					<hr>
+				</div>
+				
+				<div class="together">
+					<h2 id="heading-white">Featured Content:</h2>
+					<div class="video video-16x9">
+						<iframe src="https://www.youtube.com/embed/s6rCMDWpnYI" style="border:none;" style="float:middle"
+						></iframe>
+					</div>
+					<hr>
+				</div>
+			</div>
+			
+			<div class="column right">
+				<div class="checklist toggleable">
+				<h3 id="grey">Checklist</h3>
+					<div>
+						<ol id="grey">
+							<li><a>add music page</a></li>
+							<li><a>add gallery page</a></li>
+							<li><a>add about section</a></li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<a id="white" href="https://c1.staticflickr.com/3/2317/2084134925_cf3ee7925d_b.jpg">stop looking at my bottom</a>
+	</div>
+<script src="js/ezzydevscript.js"></script>
 </body>
+
 </html>
