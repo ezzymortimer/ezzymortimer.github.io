@@ -71,7 +71,7 @@
 }
 
 .parallax { 	
-	background-image: url("http://ezzydev.me/res/grass.jpg");
+	background-image: url("http://ezzydev.me/res/background.png");
 	height: 5000px; 
 	top: 0;
 	background-attachment: fixed;
