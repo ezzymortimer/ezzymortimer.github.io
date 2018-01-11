@@ -1,113 +1,130 @@
 <!DOCTYPE html>
+<!--
+$$$$$$$$$$ $$$$$$$$$$ $$$$$$$$$$ $$     $$  $$$$$$$   $$$$$$$$$$ $$    $$
+$$               $$         $$    $$$ $$$   $$    $$  $$          $$$ $$$
+$$$$$          $$         $$        $$$$    $$     $$ $$$$$        $$ $$    |""\/""| |"| /"/ /""""\
+&&            $$         $$          $$     $$     $$ &&           $$$$     | |\/| | | |/ /  \/"/ /
+$$          $$         $$          $$       $$     $$ $$           $$$      | |  | | |   \     / /_
+$$$$$$$$$$ $$$$$$$$$$ $$$$$$$$$$  $$        $$$$$$$$  $$$$$$$$$$   $$       |_|  |_| |_|\__\ /_____|
+-->
 <html lang="en">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Ezzy Devan Mortimer">
+	
 	<title>EzzyDev</title>
 	<link rel="icon" type="image/png" href="http://ezzydev.me/res/favicon-32x32.png?r=1" size="32x32" />
 	<link rel="shortcut icon" href="http://ezzydev.me/res/favicon.ico?r=1" />
 
 	<link rel="stylesheet" href="css/ezzydevstyle.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/TESTSCRIPT.js"></script>
 </head>
 
 <body>
+<div id="wrapper">
 
-<img class="rellax" data-rellax-speed="3" id="background-img" src="res/background.jpg"/img>
-	<div id="wrapper">
-		<div class="page-heading">
-			<a href="https://www.youtube.com/user/klutzyfingers" target="_blank" title="Opens youtube in a new tab">
-			<img src="res/EzzyDevLogo.png" alt="welcome to EZZY DEV" width="150" height="150" style="padding: 22px;"/img></a>
-		</div>
-	
-		<div class="navbar">
-			<div id="navbar">
-				<ul id="white">
-					<li><a href="#about" onclick="point_out('abouthead')">About</a></li>
-					<li><a href="gallery/index.html">Gallery</a></li>
-					<li><a href="dashcam/index.html">Dashcam</a></li>
-					<li><a href="music/index.html">Music</a></li>
-					<li><a href="index.html">Home</a></li>
-				</ul>
-			</div>
-		</div>
-		
+	<div id="header-wraper">
 		<div class="row">
-			<div class="column left">
-				<div class="checklist toggleable">
-				<h3 id="grey">External Links</h3>
-					<div>
-						<ul id="grey">
-							<li><a href="https://www.instagram.com/ezzymortimer">Instagram</a></li>
-							<li><a href="https://www.facebook.com/ezzy.mortimer">Facebook</a></li>
-							<li><a href="https://www.youtube.com/user/klutzyfingers">Youtube</a></li>
-						</ul>
-					</div>
-				</div>
+			<div class="col-md-6 col-sm-7 col-md-offset-1 col-sm-offset-0">
+				<img src="res/EzzyDevLogo.png" alt="welcome to EZZY DEV" width="auto" height="150px" style="padding: 22px;"/img>
 			</div>
-
-			<div class="column middle">
-				<div class="section">
-					<h1 id="heading-white">Welcome</h1>
-					<div class="textsheet">
-						<a>Welcome to EzzyDev, this website is created from scratch by me. I'm using this website as a 
-						means to learn web development and showcase my projects and interests. Everything is hosted on 
-						GitHub so far, and all photos and graphics will be taken or designed by me.</a>
-						<a id="white" onclick="toggle_hide()" href="#toggle">Toggle Sidebars</a>
+			<div class="col-md-3 col-sm-4 col-sm-offset-1" style="background-color:white;">
+			<h3 style="text-align: center"><b>NOW PLAYING</b></h3>
+				<div id="music">
+					<img id="track-image" class="media-object">
+					<div class="crop">
+						<h4><a class="inline-link example1" id="title"></a></h4>
+						<h4><a class="inline-link" id="artist"></a></h4>
+						<h4><a class="inline-link" id="album"></a></h4>
 					</div>
 				</div>
-				<hr>
-				<div class="section">
-					<h1 class="about" id="abouthead">About Me</h1>
-					<div id="grid30-70">
-						<div>
+            </div>			
+        </div>
+	</div>
+	
+	<div id="nav-wrapper" class="">
+		<nav class="navbar navbar-default affix-top"  data-spy="affix" data-offset-top="200">
+		  <div class="container-fluid col-md-10 col-sm-12 col-md-offset-1 col-sm-offset-0">
+			<div class="navbar-header">
+			  <img class="navbar-brand" href="#" src="res/EzzyDevLogo.png" alt="welcome to EZZY DEV" width="auto" height="10px" style="padding: 5px;"/img>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+			  <li class="active"><a href="#">Home</a></li>
+			  <li class="disabled"><a href="#">Music</a></li>
+			  <li class="disabled"><a href="#">Gallery</a></li>
+			  <li class="disabled"><a href="#">About</a></li>
+			</ul>
+		  </div>
+		</nav>
+	</div>
+	
+	<div id="content-wrapper">
+		<div class="row" id="content">
+			<div class="col-md-6 col-sm-7 col-md-offset-1 col-sm-offset-0" style="background-color:white;">
+				<div class="container-fluid">
+					<h2 class="text-centered col-sm-offset-2"><b>ABOUT ME</b></h2>
+					
+					
+					<div class="row box-styled">
+						<div class="col-sm-4 flex-centered horizontal" id="about-container">
 							<img id="about-photo" src="https://graph.facebook.com/100000239285007/picture?type=large">
 						</div>
-						<div>
-							<a id="white">I am a Computer Science student at the University of 
-							Auckland. I am enjoying computer science so far, from 2016 to 2017, I have learnt Matlab,
-							C, and Python and I am currently teaching myself HTML, CSS, and Javascript; the reason for
-							making this website. My interests are music, graphic design, computers and gaming, and
-							hanging with friends.
-							</a>
-						</div>
+						<div class="col-sm-8 flex-centered horizontal">
+								<h5>
+									I am a Computer Science student at the University of 
+									Auckland. I am enjoying computer science so far, from 2016 to 2017, I have learnt Matlab,
+									C, and Python and I am currently teaching myself HTML, CSS, and Javascript; the reason for
+									making this website. My interests are music, graphic design, computers and gaming, and
+									hanging with friends.
+								</h5>
+						</div>	
+					</div>
 					
-					</div>
-				</div>
-				<hr>
-				<div class="section">
-					<h2 id="heading-white">Featured Content:</h2>
-					<div class="video video-16x9">
-						<iframe src="https://www.youtube.com/embed/s6rCMDWpnYI" style="border:none;" style="float:middle"
-						></iframe>
-					</div>
-				</div>
-				<hr>
+				</div>	
 			</div>
 			
-			<div class="column right">
-				<div class="checklist toggleable">
-				<h3 id="grey">Checklist</h3>
-					<div>
-						<ol id="grey">
-							<li><a>add music page</a></li>
-							<li><a>add gallery page</a></li>
-							<li><a>add about section</a></li>
-						</ol>
+			<div class="col-md-3 col-sm-4 col-sm-offset-1" style="background-color:white;" height="500">
+				<h2 class="text-centered">FEATURED</h2>
+				<div>
+					<div class="text-centered" id="movie">
+						<iframe class="video" src="https://www.youtube.com/embed/s6rCMDWpnYI" frameborder="0" allowfullscreen></iframe>
 					</div>
+					
+					<div class="text-centered" id="movie">
+						<iframe class="video" src="https://www.youtube.com/embed/RtbYKQC_KV4" frameborder="0" allowfullscreen></iframe>
+					</div>
+					
+					<div class="text-centered" id="movie">
+						<iframe class="video" src="https://www.youtube.com/embed/AoAsOPr31Ok" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="text-centered">
+						<h1>TEXT FOR SCROLLING</h1>
+						<h1>TEXT FOR SCROLLING</h1>
+						<h1>TEXT FOR SCROLLING</h1>
+						<h1>TEXT FOR SCROLLING</h1>
+						<h1>TEXT FOR SCROLLING</h1>
+						<h1>TEXT FOR SCROLLING</h1>
+						<h1>TEXT FOR SCROLLING</h1>
+						<h1>TEXT FOR SCROLLING</h1>
+						<h1>TEXT FOR SCROLLING</h1>
+						<h1>TEXT FOR SCROLLING</h1>
+					</div>
+					
 				</div>
-			</div>
-		</div>
-	
-	
-		<div class="footer" id="footer">
-			<a id="white" href="https://c1.staticflickr.com/3/2317/2084134925_cf3ee7925d_b.jpg">stop looking at my bottom</a>
+			</div>			
 		</div>
 	</div>
-<script src="js/ezzydevscript.js"></script>
-<script src="js/rellax.js"></script>
-<script>var rellax = new Rellax('.rellax');</script>
-</body>
+	
+</div>
 
+
+
+</body>
 </html>
