@@ -2,10 +2,10 @@
 <!--
 $$$$$$$$$$ $$$$$$$$$$ $$$$$$$$$$ $$     $$  $$$$$$$   $$$$$$$$$$ $$    $$
 $$               $$         $$    $$$ $$$   $$    $$  $$          $$$ $$$
-$$$$$          $$         $$        $$$$    $$     $$ $$$$$        $$ $$    |""\/""| |"| /"/ /""""\
-&&            $$         $$          $$     $$     $$ &&           $$$$     | |\/| | | |/ /  \/"/ /
-$$          $$         $$          $$       $$     $$ $$           $$$      | |  | | |   \     / /_
-$$$$$$$$$$ $$$$$$$$$$ $$$$$$$$$$  $$        $$$$$$$$  $$$$$$$$$$   $$       |_|  |_| |_|\__\ /_____|
+$$$$$          $$         $$        $$$$    $$     $$ $$$$$        $$ $$ 
+&&            $$         $$          $$     $$     $$ &&           $$$$  
+$$          $$         $$          $$       $$     $$ $$           $$$   
+$$$$$$$$$$ $$$$$$$$$$ $$$$$$$$$$  $$        $$$$$$$$  $$$$$$$$$$   $$     
 -->
 <html lang="en">
 
@@ -24,34 +24,37 @@ $$$$$$$$$$ $$$$$$$$$$ $$$$$$$$$$  $$        $$$$$$$$  $$$$$$$$$$   $$       |_| 
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/72f94f4109.js"></script>
 	<script src="js/TESTSCRIPT.js"></script>
 </head>
 
 <body>
-<div id="wrapper">
+<div id="full-page">
 
 	<div id="header-wraper">
-		<div class="row">
-			<div class="col-md-6 col-sm-7 col-md-offset-1 col-sm-offset-0">
-				<img src="res/EzzyDevLogo.png" alt="welcome to EZZY DEV" width="auto" height="150px" style="padding: 22px;"/img>
-			</div>
-			<div class="col-md-3 col-sm-4 col-sm-offset-1" style="background-color:white;">
-			<h3 style="text-align: center"><b>NOW PLAYING</b></h3>
-				<div id="music">
-					<img id="track-image" class="media-object">
-					<div class="crop">
-						<h4><a class="inline-link example1" id="title"></a></h4>
-						<h4><a class="inline-link" id="artist"></a></h4>
-						<h4><a class="inline-link" id="album"></a></h4>
-					</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-6 col-sm-7 col-lg-offset-1 col-sm-offset-0">
+					<img src="res/EzzyDevLogo.png" alt="welcome to EZZY DEV" width="auto" height="150px" style="padding: 22px;"/img>
 				</div>
-            </div>			
-        </div>
+				<div class="col-lg-3 col-sm-4 col-sm-offset-1" style="background-color:white;">
+				<h3 style="text-align: center"><b>NOW PLAYING</b></h3>
+					<div id="music">
+						<img id="track-image" class="media-object" onError="this.src='http://ezzydev.me/res/album_error.png';">
+						<div class="crop">
+							<h4><a class="inline-link example1" id="title"></a></h4>
+							<h4><a class="inline-link" id="artist"></a></h4>
+							<h4><a class="inline-link" id="album"></a></h4>
+						</div>
+					</div>
+				</div>			
+			</div>
+		</div>
 	</div>
 	
 	<div id="nav-wrapper" class="">
 		<nav class="navbar navbar-default affix-top"  data-spy="affix" data-offset-top="200">
-		  <div class="container-fluid col-md-10 col-sm-12 col-md-offset-1 col-sm-offset-0">
+		  <div class="container-fluid col-lg-10 col-sm-12 col-lg-offset-1 col-sm-offset-0">
 			<div class="navbar-header">
 			  <img class="navbar-brand" href="#" src="res/EzzyDevLogo.png" alt="welcome to EZZY DEV" width="auto" height="10px" style="padding: 5px;"/img>
 			</div>
@@ -66,62 +69,69 @@ $$$$$$$$$$ $$$$$$$$$$ $$$$$$$$$$  $$        $$$$$$$$  $$$$$$$$$$   $$       |_| 
 	</div>
 	
 	<div id="content-wrapper">
-		<div class="row" id="content">
-			<div class="col-md-6 col-sm-7 col-md-offset-1 col-sm-offset-0" style="background-color:white;">
-				<div class="container-fluid">
-					<h2 class="text-centered col-sm-offset-2"><b>ABOUT ME</b></h2>
-					
-					
-					<div class="row box-styled">
-						<div class="col-sm-4 flex-centered horizontal" id="about-container">
-							<img id="about-photo" src="https://graph.facebook.com/100000239285007/picture?type=large">
+		<div class="container-fluid">
+			<div class="row" id="content">
+				<div class="col-lg-6 col-sm-7 col-lg-offset-1 col-sm-offset-0" style="background-color:white;">
+					<div class="container-fluid">
+						<h2 class="text-centered col-sm-offset-2"><b>ABOUT ME</b></h2>
+						
+						
+						<div class="row">
+							<div class="col-sm-4 flex-centered horizontal" id="about-container">
+								<img id="about-photo" src="https://graph.facebook.com/100000239285007/picture?type=large">
+							</div>
+							<div class="col-sm-7 col-sm-offest-1 flex-centered horizontal">
+									<h5>
+										I am a Computer Science student at the University of 
+										Auckland. I am enjoying computer science so far, from 2016 to 2017, I have learnt Matlab,
+										C, and Python and I am currently teaching myself HTML, CSS, and Javascript; the reason for
+										making this website. My interests are music, graphic design, computers and gaming, and
+										hanging with friends.
+									</h5>
+							</div>	
 						</div>
-						<div class="col-sm-8 flex-centered horizontal">
-								<h5>
-									I am a Computer Science student at the University of 
-									Auckland. I am enjoying computer science so far, from 2016 to 2017, I have learnt Matlab,
-									C, and Python and I am currently teaching myself HTML, CSS, and Javascript; the reason for
-									making this website. My interests are music, graphic design, computers and gaming, and
-									hanging with friends.
-								</h5>
-						</div>	
-					</div>
-					
-				</div>	
-			</div>
-			
-			<div class="col-md-3 col-sm-4 col-sm-offset-1" style="background-color:white;" height="500">
-				<h2 class="text-centered">FEATURED</h2>
-				<div>
-					<div class="text-centered" id="movie">
-						<iframe class="video" src="https://www.youtube.com/embed/s6rCMDWpnYI" frameborder="0" allowfullscreen></iframe>
-					</div>
-					
-					<div class="text-centered" id="movie">
-						<iframe class="video" src="https://www.youtube.com/embed/RtbYKQC_KV4" frameborder="0" allowfullscreen></iframe>
-					</div>
-					
-					<div class="text-centered" id="movie">
-						<iframe class="video" src="https://www.youtube.com/embed/AoAsOPr31Ok" frameborder="0" allowfullscreen></iframe>
-					</div>
-					<div class="text-centered">
-						<h1>TEXT FOR SCROLLING</h1>
-						<h1>TEXT FOR SCROLLING</h1>
-						<h1>TEXT FOR SCROLLING</h1>
-						<h1>TEXT FOR SCROLLING</h1>
-						<h1>TEXT FOR SCROLLING</h1>
-						<h1>TEXT FOR SCROLLING</h1>
-						<h1>TEXT FOR SCROLLING</h1>
-						<h1>TEXT FOR SCROLLING</h1>
-						<h1>TEXT FOR SCROLLING</h1>
-						<h1>TEXT FOR SCROLLING</h1>
-					</div>
-					
+						
+					</div>	
 				</div>
-			</div>			
+				
+				<div class="col-lg-3 col-sm-4 col-sm-offset-1" style="background-color:white;" height="500">
+					<h2 class="text-centered">FEATURED</h2>
+					<div>
+						<div class="text-centered" id="movie">
+							<iframe class="video" src="https://www.youtube.com/embed/s6rCMDWpnYI" frameborder="0" allowfullscreen></iframe>
+						</div>
+						
+						<div class="text-centered" id="movie">
+							<iframe class="video" src="https://www.youtube.com/embed/RtbYKQC_KV4" frameborder="0" allowfullscreen></iframe>
+						</div>
+						
+						<div class="text-centered" id="movie">
+							<iframe class="video" src="https://www.youtube.com/embed/AoAsOPr31Ok" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<div class="text-centered">
+							
+						</div>
+						
+					</div>
+				</div>			
+			</div>
 		</div>
 	</div>
 	
+	<div id="footer-wrapper">
+		<div class="container-fluid footer">
+			<div class="col-xs-12 footer-header">
+				
+			</div>
+			<div class="col-xs-12 footer-content">
+				<a class="icon-link" href="https://www.youtube.com/user/Klutzyfingers" target="_blank"><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i></a>
+				<a class="icon-link" href="https://www.instagram.com/ezzymortimer" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+				<a class="icon-link" href="https://www.faceboot.com/ezzy.mortimer" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+				<a class="icon-link" href="https://www.last.fm/user/ezzymortimer" target="_blank"><i class="fa fa-lastfm fa-lg" aria-hidden="true"></i></a>
+				<a class="icon-link" href="https://www.twitter.com/Klutzyfingers" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+			</div>
+		</div>
+	</div>
 </div>
 
 
