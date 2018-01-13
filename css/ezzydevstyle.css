@@ -77,10 +77,47 @@
   #movie {
 	  padding: 22px;
   }
+  
+  .info-text {
+	  padding-left: 20px;
+  }
 
   .video {
       width: 100%;
       height: auto;
+  }
+  
+  .footer {
+	  color: white;
+	  background-color: rgb(27,27,27);
+  }
+  .footer-header {
+	  text-align: center;
+  }
+  
+  .footer-header:after {
+	  content: "stop looking at my bottom";
+  }
+  .footer-header:hover:after {
+	  content: "or do, I'm not your supervisor";
+  }
+  
+  .footer-content {
+	  text-align: center;
+	  padding-bottom: 10px
+	  
+  }
+  
+  .icon-link {
+	  padding-left: 10px;
+	  padding-right: 10px;
+	  color: white !important;
+  }
+  
+    .icon-link:hover {
+	  padding-left: 10px;
+	  padding-right: 10px;
+	  color: rgb(200,200,200) !important;
   }
   
   .box-styled {
