@@ -3,6 +3,34 @@
 	  font-family: 'Lato', sans-serif !important;
 	  overflow-x: ;
   }
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg-1 {
+  background-image: url("https://instagram.fakl2-1.fna.fbcdn.net/vp/15d4df8d30876115c027eaa50f73403e/5AE71E0C/t51.2885-15/e35/13557045_1636464313338813_1117503989_n.jpg");
+  min-height: 400px;
+}
+
+.bgimg-2 {
+  background-image: url("https://instagram.fakl2-1.fna.fbcdn.net/vp/bfdf91ffa69fa1909ef5764199685ed5/5AE7FC90/t51.2885-15/e35/25011810_173960849866789_3065702490008715264_n.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("https://instagram.fakl2-1.fna.fbcdn.net/vp/4ce9f7228482a8386b25b437167d68ab/5AFC5E79/t51.2885-15/e35/15338526_762803197203914_1628609306100236288_n.jpg");
+  min-height: 400px;
+}
+
+
+  
+  .now-playing:before {
+	  content: "NOW PLAYING";
+  }
   
   .affix {
       top: 0;
@@ -22,10 +50,15 @@
   
   .crop {
 	  white-space: nowrap;
-	  text-overflow: ellipsis;
-	  width: auto;
       display: block;
       overflow: hidden;
+	  text-overflow: ellipsis;
+      /* new css */
+      max-width: 100%;
+  }
+  
+  .crop:hover {
+	  overflow: visible;
   }
   
   #header-wrapper {
@@ -78,6 +111,12 @@
 	  padding: 22px;
   }
   
+  .featured-media {
+	  padding: 22px;
+	  width: 100%;
+      height: 100%;
+  }
+  
   .info-text {
 	  padding-left: 20px;
   }
@@ -122,6 +161,22 @@
   
   .box-styled {
 	  padding: 22px;
+  }
+  
+  .padding-top {
+	  padding-top: 22px;
+  }
+  
+  .padding-right {
+	  padding-right: 22px;
+  }
+  
+  .padding-bottom {
+	  padding-bottom: 22px;
+  }
+  
+  .padding-left {
+	  padding-left: 22px;
   }
 
 
