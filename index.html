@@ -25,7 +25,8 @@ $$$$$$$$$$ $$$$$$$$$$ $$$$$$$$$$  $$        $$$$$$$$  $$$$$$$$$$   $$
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/72f94f4109.js"></script>
-	<script src="js/TESTSCRIPT.js"></script>
+	<script src="js/lastfmscript.js"></script>
+	<script src="js/ezzydevscript.js"></script>
 </head>
 
 <body>
@@ -35,16 +36,16 @@ $$$$$$$$$$ $$$$$$$$$$ $$$$$$$$$$  $$        $$$$$$$$  $$$$$$$$$$   $$
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-lg-6 col-sm-7 col-lg-offset-1 col-sm-offset-0">
-					<img src="res/EzzyDevLogo.png" alt="welcome to EZZY DEV" width="auto" height="150px" style="padding: 22px;"/img>
+					<img id="Logo" src="res/EzzyDevLogo.png" alt="welcome to EZZY DEV" width="auto" height="150px" style="padding: 22px;"/img>
 				</div>
 				<div class="col-lg-3 col-sm-4 col-sm-offset-1" style="background-color:white;">
-				<h3 style="text-align: center"><b>NOW PLAYING</b></h3>
+					<h3 style="text-align: center"><b id="last-listened" ></b></h3>
 					<div id="music">
 						<img id="track-image" class="media-object" onError="this.src='http://ezzydev.me/res/album_error.png';">
 						<div class="crop">
-							<h4><a class="inline-link example1" id="title"></a></h4>
-							<h4><a class="inline-link" id="artist"></a></h4>
-							<h4><a class="inline-link" id="album"></a></h4>
+							<h4><a class="inline-link example1 crop" id="title"></a></h4>
+							<h4><a class="inline-link crop" id="artist"></a></h4>
+							<h4><a class="inline-link crop" id="album"></a></h4>
 						</div>
 					</div>
 				</div>			
@@ -77,28 +78,83 @@ $$$$$$$$$$ $$$$$$$$$$ $$$$$$$$$$  $$        $$$$$$$$  $$$$$$$$$$   $$
 						
 						
 						<div class="row">
-							<div class="col-sm-4 flex-centered horizontal" id="about-container">
-								<img id="about-photo" src="https://graph.facebook.com/100000239285007/picture?type=large">
+							<div class="container-fluid padding-bottom">
+								<div class="col-sm-4 flex-centered horizontal" id="about-container">
+									<img id="about-photo" src="https://graph.facebook.com/100000239285007/picture?type=large">
+								</div>
+								<div class="col-sm-7 col-sm-offest-1 flex-centered horizontal">
+										<h5>
+											I am a Computer Science student at the University of 
+											Auckland. I am enjoying computer science so far, from 2016 to 2017, I have learnt Matlab,
+											C, and Python and I am currently teaching myself HTML, CSS, and Javascript; the reason for
+											making this website. My interests are music, graphic design, computers and gaming, and
+											hanging with friends.
+										</h5>
+								</div>	
 							</div>
-							<div class="col-sm-7 col-sm-offest-1 flex-centered horizontal">
-									<h5>
-										I am a Computer Science student at the University of 
-										Auckland. I am enjoying computer science so far, from 2016 to 2017, I have learnt Matlab,
-										C, and Python and I am currently teaching myself HTML, CSS, and Javascript; the reason for
-										making this website. My interests are music, graphic design, computers and gaming, and
-										hanging with friends.
-									</h5>
-							</div>	
 						</div>
-						
-					</div>	
+					</div>
+					
+					<div class="container-fluid">
+						<div class="bgimg-1">
+						  <div class="caption" style="height:250px;">
+							<span class="border"></span>
+						  </div>
+						</div>
+
+						<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+						  <h3 style="text-align:center;">PC setup</h3>
+						  <p>pc specs and stuff will go here</p>
+						</div>
+
+						<div class="bgimg-2">
+						  <div class="caption" style="height:250px;">
+							<span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"></span>
+						  </div>
+						</div>
+
+						<div style="position:relative;">
+						  <div style="text-align:center;padding:50px 80px;text-align: justify;">
+							<p>Stuff 'n' things</p>
+						  </div>
+						</div>
+
+						<div class="bgimg-3">
+						  <div class="caption" style="height:250px;">
+							<span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"></span>
+						  </div>
+						</div>
+
+						<div style="position:relative;">
+						  <div style="text-align:center;padding:50px 80px;text-align: justify;">
+							<p>Stuff 'n' things</p>
+						  </div>
+						</div>
+
+						<div class="bgimg-1">
+						  <div class="caption" style="height:250px;">
+							<span class="border"></span>
+						  </div>
+					</div>
+
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					</div>
 				</div>
 				
 				<div class="col-lg-3 col-sm-4 col-sm-offset-1" style="background-color:white;" height="500">
 					<h2 class="text-centered">FEATURED</h2>
 					<div>
-						<div class="text-centered" id="movie">
-							<iframe class="video" src="https://www.youtube.com/embed/s6rCMDWpnYI" frameborder="0" allowfullscreen></iframe>
+						<div class="text-centered" id="desk">
+							<img class="featured-media" src="res/featured/desk.jpg"></img>
 						</div>
 						
 						<div class="text-centered" id="movie">
@@ -108,10 +164,6 @@ $$$$$$$$$$ $$$$$$$$$$ $$$$$$$$$$  $$        $$$$$$$$  $$$$$$$$$$   $$
 						<div class="text-centered" id="movie">
 							<iframe class="video" src="https://www.youtube.com/embed/AoAsOPr31Ok" frameborder="0" allowfullscreen></iframe>
 						</div>
-						<div class="text-centered">
-							
-						</div>
-						
 					</div>
 				</div>			
 			</div>
@@ -126,7 +178,7 @@ $$$$$$$$$$ $$$$$$$$$$ $$$$$$$$$$  $$        $$$$$$$$  $$$$$$$$$$   $$
 			<div class="col-xs-12 footer-content">
 				<a class="icon-link" href="https://www.youtube.com/user/Klutzyfingers" target="_blank"><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i></a>
 				<a class="icon-link" href="https://www.instagram.com/ezzymortimer" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
-				<a class="icon-link" href="https://www.faceboot.com/ezzy.mortimer" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+				<a class="icon-link" href="https://www.facebook.com/ezzy.mortimer" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
 				<a class="icon-link" href="https://www.last.fm/user/ezzymortimer" target="_blank"><i class="fa fa-lastfm fa-lg" aria-hidden="true"></i></a>
 				<a class="icon-link" href="https://www.twitter.com/Klutzyfingers" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
 			</div>
