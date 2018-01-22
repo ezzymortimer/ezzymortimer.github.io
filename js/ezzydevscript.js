@@ -13,11 +13,11 @@ window.onscroll = function() {myFunction()};
 
 			
 function toggle_hide() {
-	var toggleable_elements = document.getElementsByClassName("toggleable");
+	var extended_element = document.getElementById("main-content");
 	var i;
-	for (i = 0; i < toggleable_elements.length; i++) {
-	toggleable_elements[i].classList.toggle("hidden");
-	}
+	
+	extended_element.classList.toggle("col-lg-10");
+	extended_element.classList.toggle("col-lg-6");
 }
 
 function point_out(id) {
