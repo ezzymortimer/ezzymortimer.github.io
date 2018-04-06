@@ -1,18 +1,4 @@
-window.onscroll = function() {myFunction()};
-
-			var navbar = document.getElementById("navbar");
-			var sticky = navbar.offsetTop;
-
-			function myFunction() {
-			  if (window.pageYOffset >= sticky) {
-				navbar.classList.add("sticky")
-			  } else {
-				navbar.classList.remove("sticky");
-			  }
-			}
-
-			
-function toggle_hide() {
+var toggle_hide = function toggle_hide() {
 	var extended_element = document.getElementById("main-content");
 	var i;
 	
@@ -20,7 +6,16 @@ function toggle_hide() {
 	extended_element.classList.toggle("col-lg-6");
 }
 
-function point_out(id) {
-	document.getElementById(id).style.color = "rgba(0,0,0,0)";
-	setTimeout(function(){document.getElementById(id).style.color = "white";}, 500);
+setTimeout(toggle_hide, 0);
+
+function delay(){
+	var extended = 0;
+	
+	if (extended == 0){
+		setTimeout(toggle_hide, 1000);
+		var extended = 1;}
+	
+	else {
+		setTimeout(toggle_hide, 0);
+		var extended = 0;}
 }
