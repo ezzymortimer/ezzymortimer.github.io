@@ -19,6 +19,24 @@
 body{
   height:100%;
 }
+
+.modal-content  {
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important; 
+}
+.modal-dialog-centered {
+	opacity: 1 !important;
+	vertical-align: middle !important;
+}
+.modal-dialog {
+    transform: translate(0, -50%);
+    top: 20%;
+    margin: 0 auto;
+}
+.modal-backdrop.in {
+	opacity: 0.9 !important;
+}
 .intro{
   height:100%
 }
@@ -28,7 +46,7 @@ body{
   justify-content : center;
   align-items : center;
   background-color: red;
-  background-image: url('http://ezzydev.me/res/youtubebk.png');
+  background-image: url('youtubebk.png');
   background-size: 20%;
   height : 100%;
   color : white;
@@ -40,7 +58,7 @@ body{
   justify-content : center;
   align-items : center;
   background-color: #6441a5;
-  background-image: url('http://ezzydev.me/res/twitchbk.png');
+  background-image: url('twitchbk.png');
   background-size: 20%;
   height : 100%;
   color : white;
