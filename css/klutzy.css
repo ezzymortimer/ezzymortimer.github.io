@@ -28,7 +28,7 @@ body{
   justify-content : center;
   align-items : center;
   background-color: red;
-  background-image: url('youtubebk.png');
+  background-image: url('http://ezzydev.me/res/youtubebk.png');
   background-size: 20%;
   height : 100%;
   color : white;
@@ -40,7 +40,7 @@ body{
   justify-content : center;
   align-items : center;
   background-color: #6441a5;
-  background-image: url('twitchbk.png');
+  background-image: url('http://ezzydev.me/res/twitchbk.png');
   background-size: 20%;
   height : 100%;
   color : white;
