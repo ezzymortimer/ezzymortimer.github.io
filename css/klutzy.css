@@ -12,14 +12,22 @@
 }
 
 .bold-font {
-	font-family: BebasBold;
+	font-family: BebasBold !important;
 	font-size: 72pt;
 }
 .reg-font {
-	font-family: BebasRegular;
+	font-family: BebasRegular !important;
 }
-.boook-font {
-	font-family: BebasBook;
+.book-font {
+	font-family: BebasBook !important;
+}
+a{
+	color: white !important;
+	text-decoration: none !important;
+}
+a:hover{
+	text-decoration: none !important;
+	cursor: pointer;
 }
 p {
 	font-family: BebasRegular;
@@ -95,7 +103,7 @@ body{
     margin: 0 auto;
 }
 .modal-backdrop.in {
-	opacity: 0.9 !important;
+	opacity: 0.7 !important;
 }
 .intro{
   height:100%
@@ -142,4 +150,9 @@ body{
   background-color:rgb(43,136,148);
   color : #FFF;
   height:100%
+}
+
+.footer-content {
+	background-color: #1A7783;
+	text-align: center;
 }
