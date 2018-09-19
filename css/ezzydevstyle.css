@@ -10,9 +10,15 @@
     font-family: 'BebasBook'; /*a name to be used later*/
     src: url('http://ezzydev.me/res/BebasNeue Book.ttf'); /*URL to font*/
 }
-h5 {
-	font-family: BebasRegular;
-	font-size: 1.5em;
+.bold-font {
+	font-family: BebasBold !important;
+	font-size: 72pt;
+}
+.reg-font {
+	font-family: BebasRegular !important;
+}
+.book-font {
+	font-family: BebasBook !important;
 }
 
 body {
