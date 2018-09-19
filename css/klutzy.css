@@ -1,17 +1,46 @@
+@font-face {
+    font-family: 'BebasBold'; /*a name to be used later*/
+    src: url('http://ezzydev.me/res/BebasNeue Bold.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'BebasRegular'; /*a name to be used later*/
+    src: url('http://ezzydev.me/res/BebasNeue Regular.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'BebasBook'; /*a name to be used later*/
+    src: url('http://ezzydev.me/res/BebasNeue Book.ttf'); /*URL to font*/
+}
 
-		#all li{
-			display: inline;
-		}
+.bold-font {
+	font-family: BebasBold;
+	font-size: 72pt;
+}
+.reg-font {
+	font-family: BebasRegular;
+}
 
-		#all:hover img {
-			opacity: 0.2;
-	    }
-	    #all:hover ul:hover img {
-			opacity: 0.5; 
-	    }
-	    #all:hover ul:hover img:hover {
-			opacity: 1;
-	    }
+.book-font {
+	font-family: BebasBook;
+}
+
+p {
+	font-family: BebasBook;
+	font-size: 16pt;
+}
+
+#all li{
+	display: inline;
+}
+
+#all:hover img {
+	opacity: 0.2;
+}
+#all:hover ul:hover img {
+	opacity: 0.5; 
+}
+#all:hover ul:hover img:hover {
+	opacity: 1;
+}
 	
 	html{
   height:100%
@@ -83,4 +112,3 @@ body{
   color : #FFF;
   height:100%
 }
-
