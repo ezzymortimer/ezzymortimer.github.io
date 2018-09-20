@@ -13,6 +13,8 @@
 
 .bold-font {
 	font-family: BebasBold !important;
+}
+.bold-font-large {
 	font-size: 72pt;
 }
 .reg-font {
@@ -21,6 +23,58 @@
 .book-font {
 	font-family: BebasBook !important;
 }
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-right: 50px;
+}
+
+#main {
+    transition: margin-right .5s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.menu-button{
+	position: fixed;
+	top: 40px; 
+	right: 40px;
+	cursor: pointer;
+}
+
 a{
 	color: white !important;
 	text-decoration: none !important;
@@ -28,10 +82,12 @@ a{
 a:hover{
 	text-decoration: none !important;
 	cursor: pointer;
+	opacity: 0.5;
 }
 p {
 	font-family: BebasRegular;
 	font-size: 16pt;
+	color: white;
 }
 
 .dark-overlay {
