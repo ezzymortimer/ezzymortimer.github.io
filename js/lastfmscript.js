@@ -68,16 +68,19 @@ function processTracksRequest(response) {
     var title = document.getElementById("title");
     title.target = '_blank';
     title.innerHTML = trackName;
+    title.title = trackName;
     title.href = trackURL;
 
     var artist = document.getElementById("artist");
     artist.target = '_blank';
     artist.innerHTML = artistName;
+    artist.title = artistName;
     artist.href = artistURL;
 
     var album = document.getElementById("album");
     album.target = '_blank';
     album.innerHTML = albumName;
+    album.title = albumName;
     album.href = albumURL;
 
     document.getElementById("track-image").src = imageURL;
