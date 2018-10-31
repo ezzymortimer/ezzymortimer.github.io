@@ -22,9 +22,10 @@
 }
 
 body {
-	  background-color: PowderBlue !important;
-	  font-family: 'Lato', sans-serif !important;
-	  overflow-x: ;
+    background-color: PowderBlue !important;
+    font-family: BebasRegular !important;
+    overflow-x: ;
+    letter-spacing: 0.5px !important
   }
   
   .remove-padding-sides {
