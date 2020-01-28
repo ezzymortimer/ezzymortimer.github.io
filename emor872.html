@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Ezzy Devan Mortimer">
+	
+	<title>The Bob Doran Museum of Computing</title>
+	<link rel="icon" type="image/png" href="http://redsox.uoa.auckland.ac.nz/ms/logo-192x192.png" size="32x32"/>
+
+	<link rel="stylesheet" href="emor872.css"/>
+
+	<script defer src="emor872.js"></script>
+</head>
+
+<body id="body">
+
+	<ul>
+		<li class="left-list"><img id="logo" src="http://redsox.uoa.auckland.ac.nz/ms/logo.svg"></img></li>
+		<li class="left-list"><h3>The Bob Doran Museum of Computing.</h3></li>
+		<li><a onclick="checkUserExists()" id="TEST" class="clickable" href="#">TESTING</a></li>
+		<li><a onclick="pageSelection('guestbook');" id="guestbook-tab" class="clickable" href="#">&#128214; Guestbook</a></li>
+		<li><a onclick="pageSelection('register');" id="register-tab" class="clickable" href="#">&#128100; Register</a></li>
+		<li><a onclick="pageSelection('shop');" id="shop-tab" class="clickable" href="#">&#128722; Shop</a></li>
+		<li><a onclick="pageSelection('items');" id="items-tab" class="clickable" href="#">&#128187; Displays</a></li>
+		<li><a onclick="pageSelection('news');" id="news-tab" class="clickable" href="#">&#128240; News</a></li>
+		<li><a onclick="pageSelection('home');" id="home-tab" class="current-page clickable" href="#">&#127968; Home</a></li>
+		
+	</ul>
+<div id="home" class="info-section">
+	<h2>Welcome</h2>
+	<p id="home-text">failed to load</p>
+	<img id="tower" class="image-large-width" src="https://upload.wikimedia.org/wikipedia/commons/7/77/University_of_Auckland_Clock_Tower_building_from_front.JPG"></img>
+	<hr>
+</div>
+
+<div id="news" class="hidden info-section">
+	<h2>News</h2>
+</div>
+
+<div id="items" class="hidden info-section">
+	<h2>Displays</h2>
+	<form action="">
+		<div>
+			<input type="text" id="searchDisplays" onkeyup="searchItems('items');" placeholder="Search by title in Displays"></input>
+		</div>
+	</form>
+</div>
+
+<div id="shop" class="hidden info-section">
+	<h2>Shop</h2>
+	<form action="">
+		<div>
+			<input type="text" id="searchShop" onkeyup="searchItems('shop');" placeholder="Search by product in Shop"></input>
+		</div>
+	</form>
+</div>
+
+<div id="register" class="hidden info-section">
+	<div id="register-section" class="">
+		<h2>Register</h2>
+		<form id="resigstration" onsubmit="return false">
+			<div id="registration-section">
+				<input class="register-fields" type="text" id="new-name" placeholder="Username"></input>
+				<input class="register-fields" type="password" id="new-password" placeholder="Password"></input>
+				<input class="register-fields" type="text" id="new-address" placeholder="Address"></input>
+				<a href="#" onclick="loginSwitch('login-section');" style="margin-bottom:16px">Already have an account? (Log in)</a>
+				<input type="submit" onClick="makeNewUser();" value="register" style="float:right; margin-bottom:16px;"></input>
+			</div>
+		</form>
+	</div>
+	<div id="login-section" class="hidden">
+		<h2>Login</h2>
+		<form id="log-in" onsubmit="return false">
+			<div id="log-in-section">
+				<input class="register-fields" type="text" id="user-name" placeholder="Username"></input>
+				<input class="register-fields" type="password" id="user-password" placeholder="Password"></input>
+				<a href="#" onclick="loginSwitch('register-section');" >Need an account? (Register)</a>
+				<input type="submit" onClick="login();" value="login" style="float:right; margin-bottom:16px;"></input>
+			</div>
+		</form>
+	</div>
+</div>
+
+
+<div id="guestbook" class="hidden info-section">
+	<h2>Guestbook</h2>
+	<form id="comment" onsubmit="return false">
+		<div id="comment-top">
+			<textarea id="comment-field" type="text" rows="2" name="Comment" placeholder="Leave your comment here"></textarea>
+		</div>
+		<div id="name-submit">
+			<input id="name-field" type="text" name="Name" placeholder="Name"></input>
+			<input type="submit" onClick="makeComment();" value="submit" style="float:right;"></input>
+		</div>
+	</form>
+	<iframe id="comment-section" width="60%" height="1450px" frameborder="0" scroll="no" src="http://redsox.uoa.auckland.ac.nz/ms/MuseumService.svc/htmlcomments"></iframe>
+</div>
+
+<div id="footer">
+	<a id="to-top" href="#body">back to top</a>
+	<p id="version">website version undefined</p>
+</div>
+</body>
+</html>
