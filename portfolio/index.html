@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!--
+$$$$$$$$$$ $$$$$$$$$$ $$$$$$$$$$ $$     $$  $$$$$$$   $$$$$$$$$$ $$    $$
+$$               $$         $$    $$$ $$$   $$    $$  $$          $$$ $$$
+$$$$$          $$         $$        $$$$    $$     $$ $$$$$        $$ $$ 
+&&            $$         $$          $$     $$     $$ &&           $$$$  
+$$          $$         $$          $$       $$     $$ $$           $$$   
+$$$$$$$$$$ $$$$$$$$$$ $$$$$$$$$$  $$        $$$$$$$$  $$$$$$$$$$   $$     
+-->
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Ezzy Devan Mortimer">
+	
+	<title>EzzyDev</title>
+	<link rel="icon" type="image/png" href="http://ezzydev.me/res/favicon-32x32.png?r=1" size="32x32" />
+	<link rel="shortcut icon" href="http://ezzydev.me/res/favicon.ico?r=1" />
+
+	<link rel="stylesheet" href="css/ezzydevstyle.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/72f94f4109.js"></script>
+	<script src="js/lastfmscript.js"></script>
+	<script src="js/ezzydevscript.js"></script>	
+</head>
+
+<body>
+<div id="full-page">
+
+	<div id="header-wraper">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-6 col-sm-7 col-lg-offset-1 col-sm-offset-0">
+					<span>
+					<p class="bold-font"><img id="Logo" src="res/EzzyDevLogo.png" alt="welcome to EZZY DEV" width="auto" height="150px" style="padding: 22px;"/img>
+					ezzydev.me</p>	
+					</span>
+				</div>
+				<div class="col-lg-3 col-sm-4 col-sm-offset-1" style="background-color:white;">
+					<h3 style="text-align: center"><b id="last-listened" ></b></h3>
+					<div id="music">
+						<img id="track-image" class="media-object" onError="this.src='http://ezzydev.me/res/album_error.png';">
+						<div class="crop">
+							<h4><a class="inline-link example1 crop" id="title"></a></h4>
+							<h4><a class="inline-link crop" id="artist"></a></h4>
+							<h4><a class="inline-link crop" id="album"></a></h4>
+						</div>
+					</div>
+				</div>			
+			</div>
+		</div>
+	</div>
+	
+	<div id="nav-wrapper" class="">
+		<nav class="navbar navbar-default affix-top"  data-spy="affix" data-offset-top="200">
+		  <div class="container-fluid col-lg-10 col-sm-12 col-lg-offset-1 col-sm-offset-0">
+			<div class="navbar-header">
+			  <img class="navbar-brand" href="#" src="res/EzzyDevLogo.png" alt="welcome to EZZY DEV" width="auto" height="10px" style="padding: 5px;"/img>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+			  <li class="active"><a href="http://ezzydev.me">Home</a></li>
+			  <li class="disabled"><a href="#">Music</a></li>
+			  <li class="active"><a href="/portfolio">Portfolio</a></li>
+			  <li class="disabled"><a href="#">About</a></li>
+			</ul>
+		  </div>
+		</nav>
+	</div>
+	
+	<div id="content-wrapper">
+		<div class="container-fluid">
+			<div class="row" id="content">
+				<div class="col-lg-6 col-sm-7 col-lg-offset-1 col-sm-offset-0 remove-padding-sides" style="background-color:white; height: 20px;">
+				
+				</div>
+				<div class="col-lg-3 col-sm-4 col-sm-offset-1" style="background-color:white; height: 20px; text-align: center; text-decoration: none;">
+					<a href="javascript:void(0)" class="expand" onclick="is_extended(); delay(); return togglecomment(this)" data-toggle="collapse" data-target="#featured">[ - ]</a>
+				</div>
+				<div class="col-lg-10 col-sm-7 col-lg-offset-1 col-sm-offset-0 remove-padding-sides" style="background-color:white;" id="main-content">
+					<div class="container-fluid counter-padding-sides">
+						<h2 class="text-centered col-sm-offset-2"><b>ABOUT ME</b></h2>
+						<div class="row">
+							<div class="container-fluid padding-bottom">
+								<div class="col-sm-4 flex-centered horizontal" id="about-container">
+									<img id="about-photo" src="https://graph.facebook.com/100000239285007/picture?type=large">
+								</div>
+								<div class="col-sm-7 col-sm-offest-1 flex-centered horizontal">
+								
+										<h5>
+											I am a Computer Science student at the University of 
+											Auckland. I am enjoying computer science so far, from 2016 to 2017, I have learnt Matlab,
+											C, and Python and I am currently teaching myself HTML, CSS, and Javascript; the reason for
+											making this website. My interests are music, graphic design, computers and gaming, and
+											hanging with friends.
+										</h5>
+								</div>	
+							</div>
+						</div>
+					</div>
+					
+					<div id="breakpoint" style="background-color: PowderBlue; height: 350px;"></div>
+					
+					<div class="container-fluid remove-padding-sides">
+						<div class="bgimg-1">
+							<div class="caption" style="height:250px;">
+								<h3 class="border text-centered" style="margin: 0px; color: white;">SCROLL FOR MORE</h3>
+							</div>
+						</div>
+
+						<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+							<h3 style="text-align:center;">PHOTO FEED</h3>
+							<p></p>
+						</div>
+
+						<div class="bgimg-2">
+							<div class="caption" style="height:600px;">
+								<span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"></span>
+							</div>
+						</div>
+
+						<div class="bgimg-3">
+							<div class="caption" style="height:600px;">
+								<span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"></span>
+							</div>
+						</div>
+
+						<div class="bgimg-1">
+							<div class="caption" style="height:600px;">
+								<span class="border"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-sm-4 col-sm-offset-1 collapse in" id="featured" style="background-color:white;">
+					<h2 class="text-centered">FEATURED</h2>
+					<div>
+						<div class="text-centered" id="desk">
+							<img class="featured-media" src="res/featured/desk.jpg"></img>
+						</div>
+						
+						<div class="text-centered">
+							<img class="featured-media" src="res/featured/desk.jpg"></img>
+						</div>
+						
+						<div class="text-centered">
+							<img class="featured-media" src="res/featured/desk.jpg"></img>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="footer-wrapper">
+		<div class="container-fluid footer">
+			<div class="col-xs-12 footer-header">
+				
+			</div>
+			<div class="col-xs-12 footer-content">
+				<a class="icon-link" href="https://www.instagram.com/ezzymortimer" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+				<a class="icon-link" href="https://www.facebook.com/ezzy.mortimer" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+				<a class="icon-link" href="https://www.last.fm/user/ezzymortimer" target="_blank"><i class="fa fa-lastfm fa-lg" aria-hidden="true"></i></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>
