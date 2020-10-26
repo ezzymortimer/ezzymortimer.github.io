@@ -1,5 +1,5 @@
 var toggle_hide = function toggle_hide() {
-	var extended_element = document.getElementById("main-content");
+	var extended_element = document.getElementById("main-content-collapsable");
 	var i;
 	
 	extended_element.classList.toggle("col-lg-10");
