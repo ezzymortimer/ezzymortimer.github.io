@@ -1,0 +1,240 @@
+
+html {
+    overflow-y: scroll; 
+}
+body {
+	background-color: #2B8894;
+	font-family: roboto;
+	color: White;
+	margin:0px;
+}
+
+a {
+	color: White;
+}
+
+p {
+	margin:16px;
+}
+	
+h1 {
+	marign-top:0%;
+	margin-bottom:0%;
+}
+
+h4 {
+	margin:16px;
+}
+
+h2 {
+	margin:16px;
+}
+
+iframe {
+	overflow:hidden;
+}
+
+form {
+	font-family: roboto;
+}
+
+input {
+	font-family: roboto;
+}
+
+textarea {
+	font-family: roboto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(44,44,44);
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #2B8894;
+}
+
+#titlebar {
+	height:auto;
+}
+
+#footer {
+	background-color:#202020;
+	height:auto;
+	width:100%;
+	color:white;
+	text-align:center;
+	bottom:0;
+}
+
+#logo {
+	height:48px;
+	width:48px;
+	float:left;
+	margin: 6px 16px 0px 6px;
+}
+	
+#title {
+	margin-left:15%;
+}
+	
+#navbar {
+	float:right;
+	height:128px;
+}
+
+#comment-top {
+	width:60%;
+	margin:auto;
+}
+
+#comment-section {
+	margin-left:20%;
+	overflow:hidden;
+}
+
+#comment-field {
+	width:100%;
+	line-height: 18px;
+	margin:auto;
+}
+
+#name-field {
+	width:60%;
+	line-height: 18px;
+	margin:auto;
+}
+
+#name-submit {
+	width:60%;
+	margin:auto;
+}
+#registration-section {
+	width:60%;
+	margin:auto;
+}
+#log-in-section {
+	width:60%;
+	margin:auto;
+}
+
+#searchDisplays {
+	width:60%;
+	margin:0px 16px 16px 20%;
+}
+
+#searchShop {
+	width:60%;
+	margin:0px 16px 16px 20%;
+}
+
+#links {
+	position:fixed; 
+	bottom:0; 
+	left:0;
+	margin:0px 0px 0px 16px;
+	color:#ffffffff;
+	z-index:2;
+}
+
+#version {
+	width:100%;
+	margin:0px !important;
+	position:fixed !important;
+	bottom:0 !important;
+	background-color:rgba(0,0,0,0.5);
+	z-index:2;
+}
+
+#to-top {
+	position:fixed; 
+	bottom:0; 
+	right:0; 
+	margin:0px 16px 0px 0px; 
+	color:#ffffffff;
+	z-index:3;
+}
+
+.icon-link {
+	padding-right: 16px;
+}
+
+.register-fields {
+	width:100%;
+	line-height: 18px;
+	margin:auto;
+	margin-bottom:2px;
+}
+
+.buy-button {
+	margin-left:16px;
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.clickable {
+
+}
+
+.current-page {
+  background-color:#1A7783;
+}
+
+.hidden {
+	display:none;
+}
+
+.image-med-width {
+	margin:0px auto 0px auto;
+	display:block;
+	overflow:hidden;
+	max-width:100%;
+	max-height: 500px;
+}
+.image-large-width {
+	margin:0px auto 0px auto;
+	display:block;
+	overflow:hidden;
+	max-width:100%;
+	max-height: 1000px;
+}
+
+.info-section {
+	width:60%;
+	margin:auto;
+	padding:1px;
+	background-color: #1A7783;
+	overflow:hidden;
+	box-shadow: 0px 10px 8px 0 rgb(0 0 0 / 20%), 0px 20px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.left-list {
+	float:left !important;
+}
+
+.pageSelect {
+	font-size:30pt;
+}
