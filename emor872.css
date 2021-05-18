@@ -89,7 +89,7 @@ li a:hover {
 
 #logo {
 	height:48px;
-	width:48px;
+	width:inherit;
 	float:left;
 	margin: 6px 16px 0px 6px;
 }
