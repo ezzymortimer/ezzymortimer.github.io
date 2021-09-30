@@ -226,6 +226,17 @@ li a:hover {
 	max-height: 1000px;
 }
 
+.image-large-grid {
+	margin:0px;
+	display:inline-grid;
+	overflow:hidden;
+	height: 0;
+	width:33%;
+	padding-bottom: 33%;
+	background-size: cover !important;
+	vertical-align:middle;
+}
+
 .info-section {
 	width:60%;
 	margin:auto;

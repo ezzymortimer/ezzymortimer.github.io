@@ -6,6 +6,13 @@ let displaysLoaded = 0;
 let shopLoaded = 0;
 let sectionList = [];
 
+if(document.URL.indexOf("#portfolio") >= 0){ 
+document.getElementById('news-tab').click();
+}
+if(document.URL.indexOf("#interests") >= 0){ 
+document.getElementById('items-tab').click();
+}
+
 function loginSwitch(section){
 	var element = document.getElementById(section);
   let pageList = ["login-section", "register-section"];
